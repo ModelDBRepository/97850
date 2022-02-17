@@ -2,7 +2,7 @@
 
 # Internal settings
 
-@ maxstore=1000000,toler=1e-6,dtmax=0.01,t0=10000,total=10000,trans=15000,meth=qualrk,xp=t,yp=vthl1,xlo=15000,xhi=20000,ylo=-80,yhi=20,bound=1000,output='hfs.dat'
+@ maxstore=1000000,toler=1e-6,dtmax=0.01,t0=10000,total=10000,trans=15000,meth=qualrk,xp=t,yp=vthl1,xlo=15000,xhi=20000,ylo=-80,yhi=20,bound=1000,output=hfs.dat
 
 # Parkinsonian control
 parameter tpark=5000
