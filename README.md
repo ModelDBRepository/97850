@@ -1,14 +1,11 @@
-<html><pre>
-##########
-# README #
-##########
+# README
 
 This modified version of the model by Rubin and Terman (2004) was used
 in the paper: "Is a computational model useful to understand the
-effects of deep brain stimulation in Parkinson's disease?", Journal of
-Integrative Neuroscience, 5(4):551--559.
+effects of deep brain stimulation in Parkinson's disease?", *Journal of
+Integrative Neuroscience*, 5(4):551–559.
 
-Abstract:
+## Abstract
 
 A growing number of computational models have been proposed over the
 last few years to help explain the therapeutic effect of deep brain
@@ -29,25 +26,29 @@ necessary but they may not be sufficient in their current forms to
 explain the effect of chronic electrical stimulation on the activity
 of the basal ganglia (BG) network in PD.
 
-The zipfile includes two files mdl_modif.ode and equations.pdf.
+The zipfile includes two files **mdl_modif.ode** and **equations.pdf**.
 
-* mdl_modif.ode is a modification of mdl.ode (original model) where we
+* **mdl_modif.ode** is a modification of mdl.ode (original model) where we
   changed the way synapses from STN to GPi are programmed. If you
-  examine closely Terman`s model.ode file you will find that synapses
+  examine closely Terman's model.ode file you will find that synapses
   from STN to GPi are modeled differently from other synapses (without
   the "s" variable). To be consistent with Terman 2004 paper, we
   modified this. We also changed the way the HFS signal is programmed
-  in order have easier control on the pulse width. Control of
-  parkinsonian or normal states is controled through "step" signals.
+  in order to have easier control on the pulse width. Control of
+  parkinsonian or normal states is controlled through "step" signals.
 
-* equations.pdf is a pdf result where We have tried to document all
-  the details of Terman`s model as specified in his file and the
+* **equations.pdf** is a pdf result where we have tried to document all
+  the details of Terman's model as specified in his file and the
   modifications we made.
 
-Example model usage:
+### Example model usage
+
 Extract this archive and run the xpp program with a command like
-xppaut mdl_modif.ode
+`xppaut mdl_modif.ode`
 
 After a few minutes the simulation will (hopefully) recreate
-<img src="./screenshot.jpg" alt="screenshot">
-</pre></html>
+![screenshot](./screenshot.jpg)
+
+---
+
+2025-05-30: Standardized to Markdown
